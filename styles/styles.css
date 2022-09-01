@@ -90,7 +90,8 @@ footer div {
   display: flex;
   padding: 50px;
 }
-footer div .col1, footer div .col3 {
+footer div .col1,
+footer div .col3 {
   width: 25%;
 }
 footer div .col2 {
@@ -165,6 +166,9 @@ form {
   padding-left: 50px;
   height: 100%;
 }
+.handcrafted img {
+  width: 100%;
+}
 
 .button {
   display: block;
@@ -234,15 +238,27 @@ form {
 .firstArticle,
 .secondArticle {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.firstArticle .sectionImage, .firstArticle .sectionArticle,
+.secondArticle .sectionImage,
+.secondArticle .sectionArticle {
+  width: 50%;
+}
+.firstArticle img,
+.secondArticle img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill;
+}
+.firstArticle .sectionArticle,
+.secondArticle .sectionArticle {
+  padding: 0px 100px;
 }
 
 .firstArticle {
   flex-direction: row-reverse;
-}
-
-.sectionImage,
-.sectionArticle {
-  width: 50%;
 }
 
 .subEmail {
@@ -260,8 +276,4 @@ form {
   text-align: center;
   width: 20%;
   height: 30px;
-}
-
-img {
-  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
