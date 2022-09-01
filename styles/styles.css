@@ -90,20 +90,17 @@ footer {
   display: flex;
   padding: 50px 0;
 }
-footer div,
-footer nav {
+footer div, footer nav {
   display: flex;
   flex-direction: column;
   width: 33.3333333333%;
   text-align: center;
   margin: auto;
 }
-footer div ul,
-footer nav ul {
+footer div ul, footer nav ul {
   list-style: none;
 }
-footer div li,
-footer nav li {
+footer div li, footer nav li {
   font-family: "Italiana", Times, sans-serif;
   font-size: 20px;
   line-height: 29px;
@@ -152,8 +149,7 @@ footer nav li {
   color: #FFFFFF;
   line-height: 29px;
   text-transform: uppercase;
-  position: relative;
-  bottom: 0;
+  margin-top: 40px;
 }
 
 .collection {
@@ -167,6 +163,10 @@ footer nav li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.collectionSection h2 {
+  margin: auto;
+  margin-bottom: 50px;
 }
 .collectionSection div {
   display: flex;

@@ -14,7 +14,6 @@ header {
     background-image: url("../images/headerdesktop.jpg");
     background-size: cover;
     height: 90vh;
-
 }
 
 header nav ul {
@@ -25,7 +24,6 @@ header nav ul {
     width: 25%;
     padding-top: 30px;
     margin-left: 12.5%;
-
     li {
         font-family: $secondaryFont;
         font-size: 20px;
@@ -76,8 +74,7 @@ footer {
     display: flex;
     padding: 50px 0;
 
-    div,
-    nav {
+    div, nav {
         display: flex;
         flex-direction: column;
         width: calc(100%/3);
@@ -130,7 +127,6 @@ footer {
         width: 70%;
         padding-left: 50px;
         height: 100%;
-
     }
 }
 
@@ -144,8 +140,7 @@ footer {
     color: $textColor;
     line-height: 29px;
     text-transform: uppercase;
-    position: relative;
-    bottom: 0;
+    margin-top: 40px;
 }
 
 .collection {
@@ -159,18 +154,18 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    h2 {
+        margin: auto;
+        margin-bottom: 50px;
+    }
     div {
         display: flex;
         flex-direction: row;
         gap: 30px;
-
         div {
             width: calc(100%/3);
         }
-
     }
-
     img {
         width: 100%;
     }
