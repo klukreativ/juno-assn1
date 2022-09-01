@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.15;
+}
+
+header,
+section,
+main,
+nav,
+footer,
+article,
+figure,
+hgroup {
+  display: block;
+  width: 100%;
+}
+
+body {
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: url("../images/header-2.jpg");
+}
+
+header nav ul {
+  list-style: none;
+  color: #FABA63;
+  display: flex;
+}
+header nav ul li {
+  font-family: "Italiana", Times, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  line-height: 29px;
+}
+header nav ul li a {
+  color: #FABA63;
+}
+
+h1 {
+  font-family: "Italiana", Times, sans-serif;
+  font-size: 162px;
+  text-align: right;
+  line-height: 140.4px;
+  width: 50%;
+}
+
+h4 {
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  text-align: right;
+  line-height: 46px;
+  color: #FABA63;
+  width: 50%;
+}
+
+p {
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+footer div, footer nav {
+  display: flex;
+  flex-direction: column;
+  width: 33.3333333333%;
+  text-align: center;
+  margin: auto;
+}
+footer div ul li, footer nav ul li {
+  font-family: "Italiana", Times, sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.primary {
+  background-color: #201e21;
+}
+
+.secondary {
+  background-color: #14171F;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  width: 100px;
+  padding: 5px 10px;
+  border: 2px solid #FABA63;
+  font-family: "Italiana", Times, sans-serif;
+  color: #FFFFFF;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.collection {
+  display: flex;
+}
+.collection img {
+  width: 33%;
+}
+
+.midlinks {
+  display: flex;
+  justify-content: space-around;
+}
+.midlinks h3 {
+  font-family: "Italiana", Times, sans-serif;
+  font-size: 30px;
+}
+
+.sectionImage,
+.sectionArticle {
+  width: 50%;
+}
+
+.sectionArticle {
+  padding: 50px;
+}/*# sourceMappingURL=styles.css.map */

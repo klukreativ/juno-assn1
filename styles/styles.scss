@@ -1,0 +1,126 @@
+@use "./sass/setup";
+@use "./sass/variables" as *;
+
+body {
+    color: $textColor;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: url("../images/header-2.jpg");
+}
+
+header nav ul {
+    list-style: none;
+    color: $spotColor;
+    display: flex;
+    li {
+        font-family: $primaryFont;
+        font-size: 25px;
+        text-align: center;
+        line-height: 29px;
+
+        a {
+            color: $spotColor;
+        }
+    }
+}
+
+
+h1 {
+    font-family: $primaryFont;
+    font-size: 162px;
+    text-align: right;
+    line-height: 140.4px;
+    width: 50%;
+}
+
+h4 {
+    font-family: $secondaryFont;
+    font-weight: 300;
+    font-size: 45px;
+    text-align: right;
+    line-height: 46px;
+    color: $spotColor;
+    width: 50%;
+}
+
+p {
+    font-family: $secondaryFont;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    
+    div, nav {
+        display: flex;
+        flex-direction: column;
+        width: (100%/3);
+        text-align: center;
+        margin: auto;
+        ul li {
+            font-family: $primaryFont;
+            font-size: 20px;
+            line-height: 29px;
+        }
+    }
+}
+
+.primary {
+    background-color: $primaryColor;
+}
+
+.secondary {
+    background-color: $secondaryColor;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    width: 100px;
+    padding: 5px 10px;
+    border: 2px solid $spotColor;
+    font-family: $primaryFont;
+    color: $textColor;
+    line-height: 29px;
+    text-transform: uppercase;
+
+}
+
+.collection {
+    display: flex;
+
+    img {
+        width: 33%;
+    }
+}
+
+.midlinks {
+    display: flex;
+    justify-content: space-around;
+    h3{
+        font-family: $primaryFont;
+        font-size: 30px;
+    }
+    i {
+        color: $spotCOlor;
+        width: 200px;
+    }
+}
+
+
+.sectionImage,
+.sectionArticle {
+    width: calc(50%);
+}
+
+.sectionArticle {
+    padding: 50px;
+}
