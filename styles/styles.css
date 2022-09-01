@@ -86,24 +86,50 @@ p {
   line-height: 29px;
 }
 
-footer {
+footer div {
   display: flex;
-  padding: 50px 0;
+  padding: 50px;
 }
-footer div, footer nav {
+footer div .col1, footer div .col3 {
+  width: 25%;
+}
+footer div .col2 {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  width: 50%;
+}
+footer div .col3 {
+  text-align: right;
+}
+footer div .col3 h3 {
+  margin-bottom: 10px;
+}
+footer div h3,
+footer div .col1 {
+  font-family: "Italiana", Times, sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+footer div div {
   display: flex;
   flex-direction: column;
-  width: 33.3333333333%;
-  text-align: center;
-  margin: auto;
+  margin: 0 auto;
 }
-footer div ul, footer nav ul {
+footer div div ul {
   list-style: none;
 }
-footer div li, footer nav li {
-  font-family: "Italiana", Times, sans-serif;
+footer div div li {
   font-size: 20px;
   line-height: 29px;
+}
+footer div p {
+  font-size: 16px;
+}
+
+form {
+  display: flex;
 }
 
 .primary {
@@ -127,8 +153,9 @@ footer div li, footer nav li {
   top: 30%;
 }
 
-.handcrafted div div {
+.handcrafted div {
   width: 50%;
+  padding: 50px 0;
 }
 .handcrafted .handcrafted-img {
   width: 30%;
@@ -163,6 +190,7 @@ footer div li, footer nav li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 50px 0 100px;
 }
 .collectionSection h2 {
   margin: auto;
@@ -182,7 +210,9 @@ footer div li, footer nav li {
 
 .midlinks {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10%;
+  padding: 100px 0;
 }
 .midlinks h3 {
   font-family: "Italiana", Times, sans-serif;
@@ -213,6 +243,23 @@ footer div li, footer nav li {
 .sectionImage,
 .sectionArticle {
   width: 50%;
+}
+
+.subEmail {
+  width: 80%;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.subButton {
+  font-family: "Italiana", Times, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  text-align: center;
+  width: 20%;
+  height: 30px;
 }
 
 img {
