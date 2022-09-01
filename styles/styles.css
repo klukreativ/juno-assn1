@@ -123,6 +123,10 @@ footer div ul li, footer nav ul li {
   font-family: "Italiana", Times, sans-serif;
   font-size: 30px;
 }
+.midlinks div i {
+  color: #FABA63;
+  font-size: 48px;
+}
 
 .sectionImage,
 .sectionArticle {
