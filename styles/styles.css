@@ -21,6 +21,7 @@ hgroup {
 
 body {
   color: #FFFFFF;
+  background: #201e21;
 }
 
 a {
@@ -28,17 +29,23 @@ a {
 }
 
 header {
-  background: url("../images/header-2.jpg");
+  background-image: url("../images/headerdesktop.jpg");
+  background-size: cover;
+  height: 90vh;
 }
 
 header nav ul {
   list-style: none;
   color: #FABA63;
   display: flex;
+  justify-content: space-around;
+  width: 25%;
+  padding-top: 30px;
+  margin-left: 12.5%;
 }
 header nav ul li {
-  font-family: "Italiana", Times, sans-serif;
-  font-size: 25px;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 20px;
   text-align: center;
   line-height: 29px;
 }
@@ -49,6 +56,7 @@ header nav ul li a {
 h1 {
   font-family: "Italiana", Times, sans-serif;
   font-size: 162px;
+  font-weight: 300;
   text-align: right;
   line-height: 140.4px;
   width: 50%;
@@ -57,6 +65,8 @@ h1 {
 h2 {
   font-family: "Italiana", Times, sans-serif;
   font-size: 51px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -78,16 +88,22 @@ p {
 
 footer {
   display: flex;
-  justify-content: space-around;
+  padding: 50px 0;
 }
-footer div, footer nav {
+footer div,
+footer nav {
   display: flex;
   flex-direction: column;
   width: 33.3333333333%;
   text-align: center;
   margin: auto;
 }
-footer div ul li, footer nav ul li {
+footer div ul,
+footer nav ul {
+  list-style: none;
+}
+footer div li,
+footer nav li {
   font-family: "Italiana", Times, sans-serif;
   font-size: 20px;
   line-height: 29px;
@@ -101,6 +117,31 @@ footer div ul li, footer nav ul li {
   background-color: #14171F;
 }
 
+.inner-row {
+  padding: 50px 100px;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.title {
+  position: relative;
+  top: 30%;
+}
+
+.handcrafted div div {
+  width: 50%;
+}
+.handcrafted .handcrafted-img {
+  width: 30%;
+}
+.handcrafted .handcrafted-content {
+  width: 70%;
+  padding-left: 50px;
+  height: 100%;
+}
+
 .button {
   display: block;
   text-align: center;
@@ -111,13 +152,32 @@ footer div ul li, footer nav ul li {
   color: #FFFFFF;
   line-height: 29px;
   text-transform: uppercase;
+  position: relative;
+  bottom: 0;
 }
 
 .collection {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-.collection img {
-  width: 33%;
+
+.collectionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.collectionSection div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.collectionSection div div {
+  width: 33.3333333333%;
+}
+.collectionSection img {
+  width: 100%;
 }
 
 .midlinks {
@@ -126,14 +186,23 @@ footer div ul li, footer nav ul li {
 }
 .midlinks h3 {
   font-family: "Italiana", Times, sans-serif;
+  font-weight: 300;
   font-size: 30px;
+  text-transform: uppercase;
+}
+.midlinks div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .midlinks div i {
   color: #FABA63;
-  font-size: 48px;
+  font-size: 64px;
+  margin-bottom: 10px;
 }
 
-.firstArticle, .secondArticle {
+.firstArticle,
+.secondArticle {
   display: flex;
 }
 
@@ -146,11 +215,6 @@ footer div ul li, footer nav ul li {
   width: 50%;
 }
 
-.sectionImage img {
+img {
   width: 100%;
-  height: 100%;
-}
-
-.sectionArticle {
-  padding: 50px;
 }/*# sourceMappingURL=styles.css.map */
