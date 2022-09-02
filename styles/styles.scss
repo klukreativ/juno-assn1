@@ -413,7 +413,7 @@ footer {
         h1 {
             font-size: 162px;
             line-height: 140.4px;
-        }        
+        }
     }
 
     .sectionArticle {
@@ -447,8 +447,78 @@ footer {
     .midlinks {
         flex-direction: row;
         justify-content: space-around;
-        h2{
+
+        h2 {
             font-size: 30px;
         }
     }
+
+    .articles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstArticle {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .secondArticle {
+        display: flex;
+    }
+
+    .sectionImage,
+    .sectionArticle {
+        width: 50%;
+    }
+
+    .footer {
+        .footer-inner {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 0;
+
+            .footer-nav {
+                gap: 10px;
+
+                li {
+                    font-family: $primaryFont;
+                }
+
+                div {
+                    width: 25%;
+                }
+
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact {
+                width: 25%;
+                align-items: flex-end;
+            }
+
+            .subscribe {
+                width: 100%;
+
+                form {
+                    display: flex;
+                }
+
+                .subEmail {
+                    font-size: 16px;
+                    width: 100%;
+                }
+
+                .subButton {
+                    font-size: 16px;
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .copyright {
+        padding: 20px;
+    }
+
 }
