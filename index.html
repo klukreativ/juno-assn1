@@ -19,13 +19,32 @@
 <body>
     <header>
         <nav>
+            <div class="navbar">
+              <div class="container nav-container">
+                  <input class="checkbox" type="checkbox" name="" id="" />
+                  <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>  
+                
+                <ul class="menu-items">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
         <div class="title">
             <h1>-ARO-<br>RA<br></h1>
             <h4>Jewelers</h4>
@@ -33,14 +52,14 @@
     </header>
 
     <main>
-        <div class="secondary">
+        <section class="secondary">
             <div class="inner-row flexContainer handcrafted">
                 <div class="handcrafted-img">
                     <img src="./images/handcrafted.png" alt="">
                 </div>
-                <div class="handcrafted-content">
+                <div class="inner-row sectionArticle">
                     <h2>Hand Crafted</h2>
-                    <p>
+                    <p class="body-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem et ratione eum
                         praesentium,
                         neque dolorem commodi laboriosam ex, autem, dolores enim est quidem? Explicabo soluta
@@ -54,10 +73,10 @@
                     <a href="#" class="button">Read More</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="primary inner-row">
-            <div class="collectionSection">
+        <section class="primary collection-border">
+            <div class="collection-section inner-row">
                 <h2>Latest Collection</h2>
                 <div class="collection">
                     <div>
@@ -66,39 +85,38 @@
                     <div>
                         <img src="./images/rings.png" alt="rings">
                     </div>
-                    <div>
+                    <div class="extra-image">
                         <img src="./images/earrings.jpg" alt="earrings">
-
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="secondary">
+        <section class="secondary">
             <div class="inner-row midlinks">
-                <div>
-                    <i class="fa-regular fa-images"></i>
-                    <h3>Catalogue</h3>
+                <div class="midlink-icon-container">
+                    <i class="fa-regular fa-images midlink-icons"></i>
+                    <h2>Catalogue</h2>
                 </div>
-                <div>
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <h3>Events</h3>
+                <div class="midlink-icon-container">
+                    <i class="fa-solid fa-calendar-days midlink-icons"></i>
+                    <h2>Events</h2>
                 </div>
-                <div>
-                    <i class="fa-regular fa-handshake"></i>
-                    <h3>Collaboration</h3>
+                <div class="midlink-icon-container">
+                    <i class="fa-regular fa-handshake midlink-icons"></i>
+                    <h2>Collaborations</h2>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="primary ">
-            <div class="firstArticle">
+        <section class="primary">
+            <article class="firstArticle">
                 <div class="sectionImage">
                     <img src="./images/sustainable.png" alt="woman wearing necklace">
                 </div>
-                <div class="sectionArticle">
+                <div class="sectionArticle inner-row">
                     <h2>Sustainable Materials</h2>
-                    <p>
+                    <p class="body-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, sequi neque inventore,
                         deserunt
                         quo dolorum eaque aspernatur perferendis aut excepturi pariatur necessitatibus repellat eveniet
@@ -107,17 +125,17 @@
                     </p>
                     <a href="" class="button">Read More</a>
                 </div>
-            </div>
+            </article>
 
-        </div>
-        <div class="primary">
-            <div class="secondArticle">
+        </section>
+        <section class="primary">
+            <article class="secondArticle">
                 <div class="sectionImage">
                     <img src="./images/mixnmatch.png" alt="arm with mix of jewelry">
                 </div>
                 <div class="sectionArticle inner-row">
                     <h2>Mix & Match</h2>
-                    <p>
+                    <p class="body-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, sequi neque inventore,
                         deserunt
                         quo dolorum eaque aspernatur perferendis aut excepturi pariatur necessitatibus repellat eveniet
@@ -126,36 +144,39 @@
                     </p>
                     <a href="" class="button">Read More</a>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
     </main>
-    <footer class="secondary">
-        <div>
-            <div class="col1">
-                <ul>
-                    <li>Home</li>
-                    <li>Blog</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="col2">
-                <h3>Stay Updated</h3>
-                <p>Subscribe to our newsletter to stay updated.</p>
-                <form action="">
-                    <label for="emailinput"></label>
-                    <input type="text" class="subEmail" id="emailinput" name="emailinput" placeholder="email address">
-                    <input type="button" class="subButton" value="Subcribe">
-                </form>
-            </div>
-            <div class="col3">
-                <h3>Contact</h3>
-                <p>info@email.com | 123-456-7890</p>
-                <p>123 some road, Toronto, ON</p>
-                <p>A5A 5A5, Canada</p>
+    <footer>
+        <div class="footer secondary">
+            <div class="footer-inner inner-row">
+                <div>
+                    <ul class="footer-nav">
+                        <li>Home</li>
+                        <li>Blog</li>
+                        <li>Gallery</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter to stay updated.</p>
+                    <form action="">
+                        <label for="emailinput"></label>
+                        <input type="text" class="subEmail" id="emailinput" name="emailinput"
+                            placeholder="email address">
+                        <input type="button" class="subButton" value="Subcribe">
+                    </form>
+                </div>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <p>info@email.com | 123-456-7890</p>
+                    <p>123 some road, Toronto, ON</p>
+                    <p>A5A 5A5, Canada</p>
+                </div>
             </div>
         </div>
-
+        <div class="copyright">Copyright &copy; 2019 HackerYou</div>
     </footer>
 </body>
 
