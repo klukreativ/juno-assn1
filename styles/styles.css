@@ -81,6 +81,10 @@ footer {
   line-height: 29px;
 }
 
+.navbar-lg {
+  display: none;
+}
+
 .title {
   position: relative;
   top: 20%;
@@ -117,7 +121,7 @@ footer {
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 10px;
+  gap: 5%;
 }
 
 .midlinks {
@@ -348,4 +352,78 @@ footer {
 
 .nav-container input[type=checkbox]:checked ~ .logo {
   display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .title h1 {
+    font-size: 96px;
+    line-height: 100px;
+  }
+}
+@media only screen and (min-width: 880px) {
+  header {
+    background-image: url("../images/headerdesktop.jpg");
+    background-size: cover;
+  }
+  h2 {
+    font-size: 51px;
+  }
+  .inner-row {
+    padding: 10%;
+  }
+  .navbar-sm {
+    display: none;
+  }
+  .navbar-lg {
+    list-style: none;
+    color: #FABA63;
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    width: 25%;
+    padding-top: 30px;
+    margin-left: 12.5%;
+  }
+  .navbar-lg li {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 29px;
+  }
+  .navbar-lg li a {
+    color: #FABA63;
+  }
+  .title h1 {
+    font-size: 162px;
+    line-height: 140.4px;
+  }
+  .sectionArticle {
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .handcrafted {
+    display: flex;
+    align-items: flex-start;
+    gap: 5%;
+  }
+  .handcrafted .handcrafted-img {
+    width: 35%;
+  }
+  .handcrafted .handcrafted-content {
+    width: 65%;
+  }
+  .extra-image {
+    display: block;
+  }
+  .collection-border {
+    border: none;
+  }
+  .midlinks {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .midlinks h2 {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=styles.css.map */

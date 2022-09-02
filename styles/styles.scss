@@ -1,6 +1,7 @@
 @use "./sass/setup";
 @use "./sass/variables" as *;
 
+
 body {
     color: $textColor;
     background: $primaryColor;
@@ -20,7 +21,6 @@ h2 {
     font-weight: 300;
     text-transform: uppercase;
 }
-
 
 header {
     background-image: url("../images/headermobile.jpg");
@@ -64,10 +64,15 @@ footer {
     line-height: 29px;
 }
 
+.navbar-lg {
+    display: none;
+}
+
 .title {
     position: relative;
     top: 20%;
-    z-index:1;
+    z-index: 1;
+
     h1 {
         font-family: $primaryFont;
         font-size: 64px;
@@ -76,12 +81,13 @@ footer {
         line-height: 64px;
         width: 50%;
     }
+
     h4 {
         font-family: $secondaryFont;
         font-weight: 300;
         font-size: 24px;
         text-align: right;
-        
+
         color: $spotColor;
         width: 50%;
     }
@@ -90,18 +96,19 @@ footer {
 .collection-border {
     border: 1px solid lightgrey;
     border-top: none;
+
     .collection-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 100px;
     }
-    
+
     .collection {
         display: flex;
         align-items: center;
         width: 100%;
-        gap: 10px;
+        gap: 5%;
     }
 }
 
@@ -112,12 +119,13 @@ footer {
     justify-content: center;
     gap: 20px;
     padding: 100px 0;
+
     .midlink-icon-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .midlink-icons {
         font-size: 48px;
         color: $spotColor;
@@ -138,38 +146,45 @@ footer {
     display: none;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
+
     h3 {
         font-family: $primaryFont;
         font-weight: 300;
         font-size: 24px;
         text-transform: uppercase;
     }
-    p{
+
+    p {
         font-family: $secondaryFont;
-        
+
     }
-    .footer-inner{
+
+    .footer-inner {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        .footer-nav{
+
+        .footer-nav {
             display: flex;
             justify-content: space-around;
             list-style: none;
+
             li {
                 font-family: $secondaryFont;
                 font-weight: 300;
                 font-size: 24px;
             }
         }
+
         .subscribe {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 20px;
+
             .subEmail {
                 font-family: $secondaryFont;
                 font-size: 24px;
@@ -178,7 +193,8 @@ footer {
                 border: none;
                 text-align: center;
                 margin-bottom: 10px;
-            }            
+            }
+
             .subButton {
                 font-family: $primaryFont;
                 font-size: 24px;
@@ -191,14 +207,15 @@ footer {
                 height: 50px;
             }
         }
-        .contact{
-            display: flex; 
+
+        .contact {
+            display: flex;
             flex-direction: column;
             align-items: center;
             gap: 8px;
         }
     }
-    
+
 }
 
 .copyright {
@@ -211,31 +228,31 @@ footer {
     max-width: 1050px;
     width: 90%;
     margin: auto;
-  }
-  
+}
 
-  // hamburger menu snippet from https://alvarotrigo.com/blog/hamburger-menu-css/
 
-  .navbar {
+// hamburger menu snippet from https://alvarotrigo.com/blog/hamburger-menu-css/
+
+.navbar {
     width: 100%;
-  }
-  
-  .nav-container {
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 62px;
-  }
-  
-  .navbar .menu-items {
+}
+
+.navbar .menu-items {
     display: flex;
-  }
-  
-  .navbar .nav-container li {
+}
+
+.navbar .nav-container li {
     list-style: none;
-  }
-  
-  .navbar .nav-container a {
+}
+
+.navbar .nav-container a {
     font-family: $primaryFont;
     text-decoration: none;
     text-transform: uppercase;
@@ -243,20 +260,20 @@ footer {
     font-weight: 500;
     font-size: 2rem;
     padding: 0.7rem;
-  }
-  
-  .navbar .nav-container a:hover{
-      font-weight: bolder;
-  }
-  
-  .nav-container {
+}
+
+.navbar .nav-container a:hover {
+    font-weight: bolder;
+}
+
+.nav-container {
     display: block;
     position: relative;
     height: 60px;
     z-index: 5;
-  }
-  
-  .nav-container .checkbox {
+}
+
+.nav-container .checkbox {
     position: absolute;
     display: block;
     height: 32px;
@@ -266,9 +283,9 @@ footer {
     z-index: 5;
     opacity: 0;
     cursor: pointer;
-  }
-  
-  .nav-container .hamburger-lines {
+}
+
+.nav-container .hamburger-lines {
     display: block;
     height: 26px;
     width: 32px;
@@ -279,33 +296,33 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  .nav-container .hamburger-lines .line {
+}
+
+.nav-container .hamburger-lines .line {
     display: block;
     height: 4px;
     width: 100%;
     border-radius: 10px;
     background: $textColor;
-  }
-  
-  .nav-container .hamburger-lines .line1 {
+}
+
+.nav-container .hamburger-lines .line1 {
     transform-origin: 0% 0%;
     transition: transform 0.4s ease-in-out;
-  }
-  
-  .nav-container .hamburger-lines .line2 {
+}
+
+.nav-container .hamburger-lines .line2 {
     transition: transform 0.2s ease-in-out;
-  }
-  
-  .nav-container .hamburger-lines .line3 {
+}
+
+.nav-container .hamburger-lines .line3 {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
-  }
-  
-  .navbar .menu-items {
+}
+
+.navbar .menu-items {
     padding-top: 120px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: inset 0 0 2000px rgba(0, 0, 0, 1);
     height: 100vh;
     width: 100%;
@@ -313,35 +330,125 @@ footer {
     display: flex;
     flex-direction: column;
     margin-left: -40px;
-    
+
     transition: transform 0.5s ease-in-out;
     text-align: center;
-  }
-  
-  .navbar .menu-items li {
+}
+
+.navbar .menu-items li {
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
-  }
-  
-  .nav-container input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(0%);
-  }
-  
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-    transform: rotate(45deg);
-  }
-  
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-    transform: scaleY(0);
-  }
-  
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-    transform: rotate(-45deg);
-  }
-  
-  .nav-container input[type="checkbox"]:checked ~ .logo{
-    display: none;
-  }
+}
 
-  // END
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0%);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.logo {
+    display: none;
+}
+
+// END
+@media only screen and (min-width: 640px) {
+    .title h1 {
+        font-size: 96px;
+        line-height: 100px;
+    }
+}
+
+@media only screen and (min-width: 880px) {
+    header {
+        background-image: url('../images/headerdesktop.jpg');
+        background-size: cover;
+    }
+
+    h2 {
+        font-size: 51px;
+    }
+
+    .inner-row {
+        padding: 10%;
+    }
+
+    .navbar-sm {
+        display: none;
+    }
+
+    .navbar-lg {
+        list-style: none;
+        color: $spotColor;
+        display: flex;
+        justify-content: space-around;
+        gap: 10%;
+        width: 25%;
+        padding-top: 30px;
+        margin-left: 12.5%;
+
+        li {
+            font-family: $secondaryFont;
+            font-size: 20px;
+            text-align: center;
+            line-height: 29px;
+
+            a {
+                color: $spotColor;
+            }
+        }
+    }
+
+    .title {
+        h1 {
+            font-size: 162px;
+            line-height: 140.4px;
+        }        
+    }
+
+    .sectionArticle {
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .handcrafted {
+        display: flex;
+        align-items: flex-start;
+        gap: 5%;
+
+        .handcrafted-img {
+            width: 35%;
+        }
+
+        .handcrafted-content {
+            width: 65%;
+        }
+    }
+
+    .extra-image {
+        display: block;
+    }
+
+    .collection-border {
+        border: none;
+    }
+
+    .midlinks {
+        flex-direction: row;
+        justify-content: space-around;
+        h2{
+            font-size: 30px;
+        }
+    }
+}
