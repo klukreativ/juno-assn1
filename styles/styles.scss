@@ -133,7 +133,9 @@ footer {
     }
 }
 
-
+.articles .sectionArticle {
+    padding: 5% 10%;
+}
 
 .sectionArticle {
     display: flex;
@@ -367,20 +369,25 @@ footer {
         font-size: 96px;
         line-height: 100px;
     }
+
+    
 }
 
 @media only screen and (min-width: 880px) {
     header {
         background-image: url('../images/headerdesktop.jpg');
         background-size: cover;
+        height: 80vh;
     }
 
     h2 {
         font-size: 51px;
     }
 
+    
+
     .inner-row {
-        padding: 10%;
+        padding: 5% 10%;
     }
 
     .navbar-sm {
@@ -414,12 +421,21 @@ footer {
             font-size: 162px;
             line-height: 140.4px;
         }
+        h4 {
+            font-weight: 300;
+            font-size: 45px;
+            text-align: right;
+            line-height: 46px;
+        }
     }
 
     .sectionArticle {
         align-items: flex-start;
-        justify-content: space-around;
-        padding: 0;
+    }
+
+
+    .sectionImage {
+        width: fill;
     }
 
     .handcrafted {
@@ -428,11 +444,15 @@ footer {
         gap: 5%;
 
         .handcrafted-img {
-            width: 35%;
+            width: 40%;
         }
 
         .handcrafted-content {
-            width: 65%;
+            width: 60%;
+        }
+
+        .sectionArticle{
+            padding: 0;
         }
     }
 
@@ -454,8 +474,10 @@ footer {
     }
 
     .articles {
-        display: flex;
-        flex-direction: column;
+       margin: -4px;
+       .sectionArticle{
+        padding: 0;
+       }
     }
 
     .firstArticle {
@@ -470,37 +492,38 @@ footer {
     .sectionImage,
     .sectionArticle {
         width: 50%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .inner-container{
+        width: 80%;
     }
 
     .footer {
         .footer-inner {
             flex-direction: row;
             justify-content: space-between;
-            gap: 0;
-
+            div{
+               flex-basis: 1;
+            }
             .footer-nav {
                 gap: 10px;
-
                 li {
                     font-family: $primaryFont;
                 }
 
                 div {
-                    width: 25%;
+                    flex-basis: 1;
                 }
 
                 flex-direction: column;
                 align-items: flex-start;
-            }
-
-            .contact {
-                width: 25%;
-                align-items: flex-end;
-            }
+            }           
 
             .subscribe {
-                width: 100%;
-
+                flex-basis: 1;
                 form {
                     display: flex;
                 }
@@ -515,10 +538,15 @@ footer {
                     width: 50%;
                 }
             }
+            .contact {
+                flex-basis: 1;
+                align-items: flex-end;
+                
+            }
         }
     }
+
     .copyright {
         padding: 20px;
-    }
-
+    }   
 }
