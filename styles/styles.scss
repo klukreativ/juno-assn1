@@ -32,6 +32,10 @@ footer {
     background-color: black;
 }
 
+.social-media-icons {
+    display: none;
+}
+
 .primary {
     background-color: $primaryColor;
 }
@@ -378,13 +382,18 @@ footer {
         background-image: url('../images/headerdesktop.jpg');
         background-size: cover;
         height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     h2 {
         font-size: 51px;
     }
 
-    
+    .body-text{
+        font-size: 18px;
+    }
 
     .inner-row {
         padding: 5% 10%;
@@ -417,6 +426,7 @@ footer {
     }
 
     .title {
+        position: static;
         h1 {
             font-size: 162px;
             line-height: 140.4px;
@@ -427,6 +437,22 @@ footer {
             text-align: right;
             line-height: 46px;
         }
+    }
+
+    .social-media-icons{
+        align-self: flex-end;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        a {
+            color: $textColor;
+        }
+        i {
+            font-size: 28px;
+        }       
     }
 
     .sectionArticle {
@@ -499,6 +525,9 @@ footer {
 
     .inner-container{
         width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .footer {
