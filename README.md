@@ -1,4 +1,3 @@
-# juno-assn1
-Assignment 1 - Arora
+<h1>Arora</h1>
 
-Week 1 exercise to recreate a webpage based on two images (one mobile, one desktop) using HTML and CSS only.
+<p>This was a PSD conversion assignment from Juno where we were to create a simple responsive page using solely HTML and CSS.</p>
